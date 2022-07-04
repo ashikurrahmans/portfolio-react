@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const SingleBlog = () => {
+const BlogSinglePage = () => {
   const { id } = useParams();
 
   const [bloging, setBloging] = useState([]);
@@ -27,7 +27,7 @@ const SingleBlog = () => {
             <img
               className="absolute inset-0 object-cover object-top w-full h-full filter blur"
               src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y29uY2VydCUyMHBvc3RlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
-              alt=""
+              alt="bg for blog"
             />
           </div>
 
@@ -54,4 +54,4 @@ const SingleBlog = () => {
   );
 };
 
-export default SingleBlog;
+export default BlogSinglePage;

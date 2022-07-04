@@ -1,11 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
 import Title from "./Shared/Title";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_1afbb3k",
+        "template_vpo8wor",
+        form.current,
+        "T_CgmBTKoAwlK1j1s"
+      )
+      .then(
+        (result) => {
+          toast.success("Sending Email");
+        },
+        (error) => {
+          toast.error("Sending Failed");
+        }
+      );
+  };
+
   return (
     <>
       <Title title="Contact us"></Title>
       <section className="bg-[#F8FAFD] py-12">
+        <ToastContainer />
         <div className="w-9/12 mx-auto">
           <div className="flex font-josefin rounded-md">
             <h1 className="font-josefin text-4xl font-bold text-black pb-12">
@@ -15,7 +41,7 @@ const Contact = () => {
           <div className="w-full">
             <div className="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 mb-12">
               <div className="bg-white w-full shadow rounded p-8 sm:p-12 ">
-                <form action="" method="post">
+                <form action="" method="post" ref={form} onSubmit={sendEmail}>
                   <div className="md:flex items-center mt-12">
                     <div className="w-full md:w-1/2 flex flex-col">
                       <label className="font-semibold leading-none text-gray-400">
@@ -23,6 +49,7 @@ const Contact = () => {
                       </label>
                       <input
                         type="text"
+                        name="name"
                         className="leading-none text-gray-50 p-3 focus:outline-none focus:border-gray-100 mt-4 border-0 bg-gray-200 rounded"
                       />
                     </div>
@@ -32,6 +59,7 @@ const Contact = () => {
                       </label>
                       <input
                         type="email"
+                        name="email"
                         className="leading-none text-gray-50 p-3 focus:outline-none focus:border-gray-100 mt-4 border-0 bg-gray-200 rounded"
                       />
                     </div>
@@ -42,6 +70,7 @@ const Contact = () => {
                         Subject
                       </label>
                       <input
+                        name="subject"
                         type="text"
                         className="leading-none text-gray-50 p-3 focus:outline-none focus:border-gray-100 mt-4 border-0 bg-gray-200 rounded"
                       />
@@ -53,6 +82,7 @@ const Contact = () => {
                         Message
                       </label>
                       <textarea
+                        name="message"
                         type="text"
                         className="h-40 text-base leading-none text-gray-50 p-3 focus:outline-none focus:border-gray-200 mt-4 bg-gray-300 border-0 rounded"
                       ></textarea>

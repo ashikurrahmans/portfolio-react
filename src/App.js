@@ -1,11 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 import Menu from "./Components/Menu";
-import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
 import { HelmetProvider } from "react-helmet-async";
-import SingleBlog from "./Components/SingleBlog";
-import AllBlogs from "./Components/Shared/AllBlogs";
+import BlogFetch from "./Components/Shared/Blogs/BlogFetch";
+import BlogSinglePage from "./Components/Shared/Blogs/BlogSinglePage";
+import ProjectSingle from "./Components/Shared/Projects/ProjectSingle";
+import Projects from "./Components/Shared/Projects/Projects";
 
 function App() {
   return (
@@ -14,9 +15,16 @@ function App() {
         <Menu>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/blogs" element={<AllBlogs />} />
-            <Route path="/blog/:id" element={<SingleBlog />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/blogs" element={<BlogFetch></BlogFetch>} />
+            <Route
+              path="/blogs/:id"
+              element={<BlogSinglePage></BlogSinglePage>}
+            />
+            <Route
+              path="/projects/:id"
+              element={<ProjectSingle></ProjectSingle>}
+            />
+            <Route path="/projects" element={<Projects></Projects>}></Route>
           </Routes>
           <Footer></Footer>
         </Menu>

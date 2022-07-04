@@ -1,12 +1,11 @@
 import React from "react";
-import Title from "./Shared/Title";
+import Title from "../Title";
 import { Link } from "react-router-dom";
 
-const Blog = (props) => {
+const BlogSingle = (props) => {
   const {
     id,
     title,
-    category,
     img,
     description,
     tags,
@@ -22,7 +21,7 @@ const Blog = (props) => {
         <div className="blogItem mx-auto">
           <div className="flex flex-wrap place-items-center">
             <div className="overflow-hidden shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-5 hover:shadow-2xl rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
-              <Link to={`/blog/${id}`} className="w-full block h-full">
+              <Link to={`/blogs/${id}`} className="w-full block h-full">
                 <img alt="blog " src={img} />
                 <div className="bg-white w-full p-4">
                   <p className="text-indigo-500 text-2xl font-medium">
@@ -70,4 +69,4 @@ const Blog = (props) => {
   );
 };
 
-export default Blog;
+export default BlogSingle;

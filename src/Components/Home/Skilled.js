@@ -24,9 +24,9 @@ const Skilled = () => {
             This is
             <span className="text-indigo-700 text-3xl font-bold"> Ashik, </span>
             I build applications for solving real time problems. I am working as
-            a Frontend Developer at Upwork (Freelance). I am helping my team
-            build a robust and flexible React Component Library and make other
-            React projects performant and smooth.
+            a Frontend Developer at Upwork (Freelance). I am helping my
+            busineses to build a robust and flexible React Component Library and
+            make other React projects performant and smooth.
           </p>
         </div>
       </div>
@@ -36,7 +36,7 @@ const Skilled = () => {
       <div className="w-9/12 mx-auto">
         <div className="grid gap-12 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
           <div className="card w-80 md:w-60 bg-base-100 shadow-xl py-4 ">
-            <div className="flex gap-6 md:gap-6 items-center">
+            <div className="flex gap-6 md:gap-6 items-center hover:border-b-4 border-bg-black">
               <div className="pl-10 md:pl-4">
                 <FaReact fontSize="50px" />
               </div>

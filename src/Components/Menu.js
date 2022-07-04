@@ -7,7 +7,7 @@ const Menu = ({ children }) => {
       <div className="drawer">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
-          <div className="w-full navbar ">
+          <div className="w-full navbar  sticky top-0 bg-[#D0DCF2] z-10">
             <div className="flex-none lg:hidden">
               <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
                 <svg
@@ -29,10 +29,9 @@ const Menu = ({ children }) => {
               <div className="flex-1 px-2 mx-2 sm:justify-between">
                 <Link to="/">
                   <img
-                    // src="https://pbs.twimg.com/profile_images/1472022785908166659/0qJ2xQhK_400x400.jpg"
                     src="https://media-exp1.licdn.com/dms/image/C5103AQH_bxKYrpJCng/profile-displayphoto-shrink_800_800/0/1566404083867?e=1660176000&v=beta&t=d-tgDcFjLcg_kpGgbwDq1dAd4jcdQir8i33rGDkDg2A"
                     alt=""
-                    className="w-12 rounded-full"
+                    className="w-12 h-12 shadow"
                   />
                 </Link>
               </div>
@@ -67,19 +66,19 @@ const Menu = ({ children }) => {
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-          <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 ">
+          <ul className="menu p-4 overflow-y-auto w-80  ">
             <li>
-              <Link to="/" className="text-black">
+              <Link to="/" className="text-white">
                 It's Ashik
               </Link>
             </li>
             <li>
-              <Link to="/blogs" className="text-black">
+              <Link to="/blogs" className="text-white">
                 Blogs
               </Link>
             </li>
             <li>
-              <Link to="/projects" className="text-black">
+              <Link to="/projects" className="text-white">
                 Projects
               </Link>
             </li>

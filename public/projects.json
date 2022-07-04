@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "title": "Perfumes Store (Redux)",
+    "description": "This project has been created while practicing react core concept and implementing and know about coding experience. I mentioned everything how i developed this web application and what stacks i used for done this ecommerce project.",
+    "projectImage": "https://i.ibb.co/6b65R17/Perfumes-Store.png",
+    "projectUrl": "https://wirehouse-ee68f.web.app",
+    "tags": ["Ecommerce", "SPA"],
+    "singleProjectList": [
+      "React (Javascript frontend Library)",
+      "Tailwind CSS (utility first css framwork for making the design)",
+      "React Router (its a javascript library routing one page to another without reloading the page.)",
+      "Firebase (for implementing login & logout features on my website)",
+      "Firebase react router hook (it's a library for make easier for authendication)",
+      "React Toastify (React Library for showing notification)",
+      "Dotenv (Its a library to hide potential credentials from public)",
+      "React Helmet Async (it's used for showing the page title in website)"
+    ],
+    "gitHubLinkFrontend": "https://github.com/ashikurrahmans/perfumes-app-react",
+    "gitHubLinkBackend": "https://github.com/ashikurrahmans/perfumes-serverside-code"
+  },
+  {
+    "id": 2,
+    "title": "Electro Arts Store (Redux)",
+    "description": "This project has been created while practicing react core concept and implementing and know about coding experience. I mentioned everything how i developed this web application and what stacks i used for done this ecommerce project.",
+    "projectImage": "https://i.ibb.co/k9my1M2/electroarts.png",
+    "projectUrl": "https://elector-arts.web.app/",
+    "tags": ["Ecommerce", "SPA"],
+    "singleProjectList": [
+      "React (Javascript frontend Library)",
+      "Tailwind CSS (utility first css framwork for making the design)",
+      "React Router (its a javascript library routing one page to another without reloading the page.)",
+      "Firebase (for implementing login & logout features on my website)",
+      "Firebase react router hook (it's a library for make easier for authendication)",
+      "React Toastify (React Library for showing notification)",
+      "Dotenv (Its a library to hide potential credentials from public)",
+      "React Helmet Async (it's used for showing the page title in website)"
+    ],
+    "gitHubLinkFrontend": "https://github.com/ashikurrahmans/electro-arts-frontend",
+    "gitHubLinkBackend": "https://github.com/ashikurrahmans/electro-arts-backend"
+  },
+  {
+    "id": 3,
+    "title": "Elite Dental Studio USA",
+    "projectImage": "https://i.ibb.co/VgcRqpL/elite-Dentalstudio.png",
+    "description": "This project has been created while practicing react core concept and implementing and know about coding experience. I mentioned everything how i developed this web application and what stacks i used for done this ecommerce project.",
+    "projectUrl": "https://elite-a1384.web.app/",
+    "tags": ["Ecommerce", "SPA"],
+    "singleProjectList": [
+      "React (Javascript frontend Library)",
+      "Tailwind CSS (utility first css framwork for making the design)",
+      "React Router (its a javascript library routing one page to another without reloading the page.)",
+      "Firebase (for implementing login & logout features on my website)",
+      "Firebase react router hook (it's a library for make easier for authendication)",
+      "React Toastify (React Library for showing notification)",
+      "Dotenv (Its a library to hide potential credentials from public)",
+      "React Helmet Async (it's used for showing the page title in website)"
+    ],
+    "gitHubLinkFrontend": "https://github.com/ashikurrahmans/elite-dental-studio",
+    "gitHubLinkBackend": ""
+  },
+
+  {
+    "id": 4,
+    "title": "Dentisto (Redux)",
+    "projectImage": "https://i.ibb.co/kXb8tRb/dentisto.png",
+    "description": "This project has been created while practicing react core concept and implementing and know about coding experience. I mentioned everything how i developed this web application and what stacks i used for done this ecommerce project.",
+    "projectUrl": "https://dentisto.netlify.app/",
+    "tags": ["Ecommerce", "SPA"],
+    "singleProjectList": [
+      "React (Javascript frontend Library)",
+      "Tailwind CSS (utility first css framwork for making the design)",
+      "React Router (its a javascript library routing one page to another without reloading the page.)",
+      "Firebase (for implementing login & logout features on my website)",
+      "Firebase react router hook (it's a library for make easier for authendication)",
+      "React Toastify (React Library for showing notification)",
+      "Dotenv (Its a library to hide potential credentials from public)",
+      "React Helmet Async (it's used for showing the page title in website)"
+    ],
+    "gitHubLinkFrontend": "https://github.com/ashikurrahmans/dentisto-frontend-redux",
+    "gitHubLinkBackend": ""
+  },
+  {
+    "id": 5,
+    "title": "Convention Center",
+    "description": "This project has been created while practicing react core concept and implementing and know about coding experience. I mentioned everything how i developed this web application and what stacks i used for done this ecommerce project.",
+    "projectUrl": "https://conventions.netlify.app",
+    "tags": ["Ecommerce", "SPA"],
+    "singleProjectList": [
+      "React (Javascript frontend Library)",
+      "Tailwind CSS (utility first css framwork for making the design)",
+      "React Router (its a javascript library routing one page to another without reloading the page.)",
+      "Firebase (for implementing login & logout features on my website)",
+      "Firebase react router hook (it's a library for make easier for authendication)",
+      "React Toastify (React Library for showing notification)",
+      "Dotenv (Its a library to hide potential credentials from public)",
+      "React Helmet Async (it's used for showing the page title in website)"
+    ],
+    "gitHubLinkFrontend": "https://github.com/ashikurrahmans/perfumes-app-react",
+    "gitHubLinkBackend": "https://github.com/ashikurrahmans/perfumes-app-react"
+  },
+  {
+    "id": 6,
+    "title": "Perfumes Store",
+    "description": "This project has been created while practicing react core concept and implementing and know about coding experience. I mentioned everything how i developed this web application and what stacks i used for done this ecommerce project.",
+    "projectUrl": "https://facebook.com",
+    "tags": ["Ecommerce", "SPA"],
+    "singleProjectList": [
+      "React (Javascript frontend Library)",
+      "Tailwind CSS (utility first css framwork for making the design)",
+      "React Router (its a javascript library routing one page to another without reloading the page.)",
+      "Firebase (for implementing login & logout features on my website)",
+      "Firebase react router hook (it's a library for make easier for authendication)",
+      "React Toastify (React Library for showing notification)",
+      "Dotenv (Its a library to hide potential credentials from public)",
+      "React Helmet Async (it's used for showing the page title in website)"
+    ],
+    "gitHubLinkFrontend": "https://github.com/ashikurrahmans/perfumes-app-react",
+    "gitHubLinkBackend": "https://github.com/ashikurrahmans/perfumes-app-react"
+  }
+]

@@ -1,10 +1,10 @@
 import React from "react";
-import AllBlogs from "./Shared/AllBlogs";
+import BlogFetch from "./Shared/Blogs/BlogFetch";
 
 const Blogs = () => {
   return (
     <>
-      <AllBlogs></AllBlogs>
+      <BlogFetch></BlogFetch>
     </>
   );
 };
