@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Components/Home";
+import Footer from "./Components/Footer";
+import { HelmetProvider } from "react-helmet-async";
+import BlogFetch from "./Components/Shared/Blogs/BlogFetch";
+import BlogSinglePage from "./Components/Shared/Blogs/BlogSinglePage";
+import ProjectSingle from "./Components/Shared/Projects/ProjectSingle";
+import Projects from "./Components/Shared/Projects/Projects";
+import NavBar from "./Components/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HelmetProvider>
+        <NavBar></NavBar>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blogs" element={<BlogFetch></BlogFetch>} />
+          <Route
+            path="/blogs/:id"
+            element={<BlogSinglePage></BlogSinglePage>}
+          />
+          <Route
+            path="/projects/:id"
+            element={<ProjectSingle></ProjectSingle>}
+          />
+          <Route path="/projects" element={<Projects></Projects>}></Route>
+        </Routes>
+        <Footer></Footer>
+      </HelmetProvider>
+    </>
   );
 }
 
