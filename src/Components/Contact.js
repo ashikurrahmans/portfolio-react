@@ -23,7 +23,6 @@ const Contact = () => {
 
   return (
     <>
-      <Title title="Contact us"></Title>
       <section className="bg-[#F8FAFD] py-12">
         <div className="w-9/12 mx-auto">
           <div className="flex font-josefin rounded-md">

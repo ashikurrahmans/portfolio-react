@@ -8,9 +8,7 @@ const ProjectFatch = () => {
   const location = useLocation();
 
   useEffect(() => {
-    fetch(
-      "https://raw.githubusercontent.com/ashikurrahmans/portfolio-json/main/projects.json"
-    )
+    fetch("https://ashikurrahmans.github.io/portfolio-json/projects.json")
       .then((res) => res.json())
       .then((data) => {
         setProjects(data);

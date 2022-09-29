@@ -11,15 +11,13 @@ import BlogFetch from "./Shared/Blogs/BlogFetch";
 const Home = () => {
   return (
     <>
-      <Title title="Frontend Developer"></Title>
       <Snowfall></Snowfall>
+      <Title title="Frontend Focused MERN Stack Developer"></Title>
       <Hero></Hero>
       <Quotes></Quotes>
       <Skilled></Skilled>
       <HomeProjects></HomeProjects>
-      <div className="w-9/12 mx-auto">
-        <BlogFetch></BlogFetch>
-      </div>
+      <BlogFetch></BlogFetch>
       <Contact></Contact>
     </>
   );

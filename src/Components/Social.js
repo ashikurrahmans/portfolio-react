@@ -16,7 +16,7 @@ const Social = () => {
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/ashikurrohman/"
-            className="btn btn-circle"
+            className="btn btn-circle "
           >
             <AiFillLinkedin fontSize="20px" />
           </a>

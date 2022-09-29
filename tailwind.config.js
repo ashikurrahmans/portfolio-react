@@ -5,6 +5,8 @@ module.exports = {
       fontFamily: {
         satisfy: ["Satisfy", "cursive"],
         josefin: ["Josefin Sans", "Arial"],
+        TheHillsPersonalUseOnly: ["TheHillsPersonalUseOnly-mrdv"],
+        systemui: ["system-ui"],
       },
     },
   },

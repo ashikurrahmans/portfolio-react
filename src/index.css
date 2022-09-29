@@ -16,3 +16,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: "TheHillsPersonalUseOnly-mrdv";
+  src: local("TheHillsPersonalUseOnly-mrdv"),
+    url("../src/fonts/TheHillsPersonalUseOnly-mrdv.ttf") format("truetype");
+  font-weight: bold;
+}

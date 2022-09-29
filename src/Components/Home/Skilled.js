@@ -23,23 +23,25 @@ const Skilled = () => {
           <p className="md:ml-12 lg:ml-16 font-satisfy text-xl mt-4 font-semibold leading-10">
             Hello, buddy... <br />
             This is
-            <span className="text-indigo-700 text-3xl font-bold ml-1">
-              &lt;Ashik /&gt;,
+            <span className="text-indigo-700 text-3xl font-bold ml-1 font-systemui ">
+              &lt;Ashik /&gt;
             </span>
-            I build applications for solving real time problems. I am working as
-            a Frontend Developer at Upwork (Freelance). I am helping my
-            busineses to build a robust and flexible React Component Library and
-            make other React projects performant and smooth.
+            <span className="text-[#203647]">
+              I build applications for solving real time problems. I am working
+              as a Frontend Developer at Upwork (Freelance). I am helping my
+              busineses to build a robust and flexible React Component Library
+              and make other React projects performant and smooth.
+            </span>
           </p>
         </div>
       </div>
-      <div className="w-9/12 mx-auto flex my-10 font-josefin rounded-md">
+      <div className="w-9/12 mx-auto flex font-josefin rounded-md my-12">
         <h1 className="font-josefin text-4xl font-bold">I'm skilled at</h1>
       </div>
       <div className="w-9/12 mx-auto">
         <div className="grid gap-12 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-          <div className="card w-80 md:w-60 bg-base-100 shadow-xl py-4 ">
-            <div className="flex gap-6 md:gap-6 items-center hover:border-b-4 border-bg-black">
+          <div className=" w-80 md:w-60 bg-base-100 shadow-2xl py-4 rounded-xl">
+            <div className="flex gap-6 md:gap-6 items-center ">
               <div className="pl-10 md:pl-4">
                 <FaReact fontSize="50px" />
               </div>
@@ -48,7 +50,7 @@ const Skilled = () => {
               </div>
             </div>
           </div>
-          <div className="card w-80 md:w-60 bg-base-100 shadow-xl py-4 ">
+          <div className=" w-80 md:w-60 bg-base-100 shadow-2xl py-4 rounded-xl">
             <div className="flex gap-6 md:gap-6 items-center">
               <div className="pl-10 md:pl-4 ">
                 <SiNextdotjs fontSize="50px" />
@@ -58,7 +60,7 @@ const Skilled = () => {
               </div>
             </div>
           </div>
-          <div className="card w-80 md:w-60 bg-base-100 shadow-xl py-4 ">
+          <div className=" w-80 md:w-60 bg-base-100 shadow-2xl py-4 rounded-xl">
             <div className="flex gap-6 md:gap-6 items-center">
               <div className="pl-10 md:pl-4 ">
                 <SiTailwindcss fontSize="50px" />
@@ -68,7 +70,7 @@ const Skilled = () => {
               </div>
             </div>
           </div>
-          <div className="card  w-80 md:w-60  bg-base-100 shadow-xl py-4 ">
+          <div className=" w-80 md:w-60  bg-base-100 shadow-2xl py-4 rounded-xl">
             <div className="flex gap-6 md:gap-6 items-center">
               <div className="pl-10 md:pl-4">
                 <BsBootstrapFill fontSize="50px" />
@@ -78,7 +80,7 @@ const Skilled = () => {
               </div>
             </div>
           </div>
-          <div className="card w-80 md:w-60 bg-base-100 shadow-xl py-4 ">
+          <div className=" w-80 md:w-60 bg-base-100 shadow-2xl py-4 rounded-xl">
             <div className="flex gap-6 md:gap-6 items-center">
               <div className="pl-10 md:pl-4 ">
                 <DiFirebase fontSize="50px" />
@@ -88,7 +90,7 @@ const Skilled = () => {
               </div>
             </div>
           </div>
-          <div className="card w-80 md:w-60 bg-base-100 shadow-xl py-4 ">
+          <div className=" w-80 md:w-60 bg-base-100 shadow-2xl py-4 rounded-xl">
             <div className="flex gap-6 md:gap-6 items-center">
               <div className="pl-10 md:pl-4 ">
                 <SiJsonwebtokens fontSize="50px" />
@@ -98,7 +100,7 @@ const Skilled = () => {
               </div>
             </div>
           </div>
-          <div className="card w-80 md:w-60 bg-base-100 shadow-xl py-4 ">
+          <div className="w-80 md:w-60 bg-base-100 shadow-2xl py-4 rounded-xl">
             <div className="flex gap-6 md:gap-6 items-center">
               <div className="pl-10 md:pl-4 ">
                 <SiExpress fontSize="50px" />
@@ -108,7 +110,7 @@ const Skilled = () => {
               </div>
             </div>
           </div>
-          <div className="card w-80 md:w-60 bg-base-100 shadow-xl py-4 ">
+          <div className=" w-80 md:w-60 bg-base-100 shadow-2xl py-4 rounded-xl">
             <div className="flex gap-6 md:gap-6 items-center">
               <div className="pl-10 md:pl-4 ">
                 <DiMongodb fontSize="50px" />
