@@ -5,10 +5,9 @@ import { Link } from "react-router-dom";
 const ProjectCard = (props) => {
   const { id, title, description, tags } = props.project;
   return (
-    <div className="w-90 p-4 bg-base-100 hover:shadow-2xl shadow-xl rounded-lg ">
+    <div className="w-90 p-6 bg-base-100 hover:shadow-2xl shadow-xl rounded-lg ">
       <div className="flex justify-between font-josefin">
-        <h2 className="card-title">{title}</h2>
-
+        <h2 className="text-xl font-bold">{title}</h2>
         <Link
           to={`/projects/${id}`}
           className="badge badge-secondary p-3 rounded-lg shadow-md"

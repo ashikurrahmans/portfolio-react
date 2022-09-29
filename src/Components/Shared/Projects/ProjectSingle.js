@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const ProjectSingle = () => {
   const { id } = useParams();
 
   const [projects, setProjects] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(
@@ -24,7 +23,7 @@ const ProjectSingle = () => {
         <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <div className="">
             <img
-              className="w-full rounded-lg"
+              className="w-full rounded-lg my-8"
               src={singleProject?.projectImage}
               alt="office content 1"
             />
@@ -44,30 +43,37 @@ const ProjectSingle = () => {
             <p className="mb-4 text-black">{singleProject?.description}</p>
 
             <div>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href={singleProject?.projectUrl}
-                className="btn btn-active"
-              >
-                Visit Website
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href={singleProject?.gitHubLinkFrontend}
-                className="btn btn-active ml-4 btn-primary"
-              >
-                Frontend Github Repo
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href={singleProject?.gitHubLinkBackend}
-                className="btn btn-active ml-4 btn-secondary m-4"
-              >
-                Backend Github Repo
-              </a>
+              <div className="my-10">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={singleProject?.projectUrl}
+                  className="mt-9 font-semibold leading-none text-white py-4 px-10 bg-black rounded-lg  focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 focus:outline-none"
+                >
+                  Visit Website
+                </a>
+              </div>
+              <div className="my-10">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={singleProject?.gitHubLinkFrontend}
+                  className="mt-9 font-semibold leading-none text-white py-4 px-10 bg-green-700 rounded-lg  focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 focus:outline-none"
+                >
+                  Frontend Git Repo
+                </a>
+              </div>
+
+              <div className="my-4">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={singleProject?.gitHubLinkBackend}
+                  className="mt-9 font-semibold leading-none text-white py-4 px-10 bg-red-800 rounded-lg  focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 focus:outline-none"
+                >
+                  Backend Git Repo
+                </a>
+              </div>
             </div>
           </div>
         </div>

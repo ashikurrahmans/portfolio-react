@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <>
       <Title title="All Frontend & MERN Stack Projects"></Title>
-      <div className="my-24 py-24 w-9/12 mx-auto">
+      <div className="my-24 w-9/12 mx-auto">
         <ProjectFatch></ProjectFatch>
       </div>
     </>
