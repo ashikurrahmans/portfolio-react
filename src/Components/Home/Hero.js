@@ -1,12 +1,13 @@
 import React from "react";
 import Social from "../Social";
 import headerBottom from "../../../src/assets/HeaderBottomBg.png";
+import Layout from "../Shared/Layout";
 
 const Hero = () => {
   return (
     <section className="bg-black">
       <div className="text-center">
-        <div className="w-10/12 mx-auto">
+        <Layout>
           <div className="min-h-screen grid content-center lg:mt-14">
             <h2 className="lg:text-6xl font-medium font-TheHillsPersonalUseOnly tracking-widest text-white sm:text-3xl">
               Hi I'm
@@ -34,7 +35,7 @@ const Hero = () => {
           <div className="flex justify-center">
             <img src={headerBottom} alt="Header Bottom background" />
           </div>
-        </div>
+        </Layout>
       </div>
     </section>
   );

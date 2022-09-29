@@ -6,7 +6,9 @@ const Blogs = () => {
   return (
     <>
       <Title title="Know About All Blogs"></Title>
-      <BlogFetch></BlogFetch>
+      <div className="pt-12">
+        <BlogFetch></BlogFetch>
+      </div>
     </>
   );
 };

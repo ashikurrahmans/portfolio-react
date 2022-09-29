@@ -1,4 +1,5 @@
 import React from "react";
+import Title from "../Title";
 import { Link } from "react-router-dom";
 
 const BlogSingle = (props) => {
@@ -17,8 +18,8 @@ const BlogSingle = (props) => {
     <>
       <section>
         <div className="flex flex-wrap place-items-center">
-          <div className="shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-5 hover:shadow-2xl rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
-            <Link to={`/blogs/${id}`} className="w-full h-full">
+          <div className="shadow-lg transition duration-500  hover:shadow-2xl rounded-lg h-90 w-60 md:w-80 ">
+            <Link to={`/blogs/${id}`} className="w-full block h-full">
               <img alt="blog " src={img} />
               <div className="bg-white w-full p-4">
                 <p className="text-indigo-500 text-2xl font-medium">{title}</p>

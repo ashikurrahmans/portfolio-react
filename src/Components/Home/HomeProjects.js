@@ -1,16 +1,16 @@
 import React from "react";
+import HomeTitle from "../Shared/HomeTitle";
+import Layout from "../Shared/Layout";
 import ProjectFatch from "../Shared/Projects/ProjectFatch";
 
 const HomeProjects = () => {
   return (
     <>
       <section className="bg-[#F8FAFD] mb-12">
-        <div className="w-9/12 mx-auto my-12">
-          <div className="flex mb-10 font-josefin rounded-md">
-            <h1 className="font-josefin text-4xl font-bold">My Projects</h1>
-          </div>
+        <Layout>
+          <HomeTitle title="My Projects"></HomeTitle>
           <ProjectFatch></ProjectFatch>
-        </div>
+        </Layout>
       </section>
     </>
   );

@@ -3,11 +3,11 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
 import { HelmetProvider } from "react-helmet-async";
-import BlogFetch from "./Components/Shared/Blogs/BlogFetch";
 import BlogSinglePage from "./Components/Shared/Blogs/BlogSinglePage";
 import ProjectSingle from "./Components/Shared/Projects/ProjectSingle";
 import Projects from "./Components/Shared/Projects/Projects";
 import NavBar from "./Components/Navbar";
+import Blogs from "./Components/Blogs";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <NavBar></NavBar>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/blogs" element={<BlogFetch></BlogFetch>} />
+          <Route path="/blogs" element={<Blogs></Blogs>} />
           <Route
             path="/blogs/:id"
             element={<BlogSinglePage></BlogSinglePage>}

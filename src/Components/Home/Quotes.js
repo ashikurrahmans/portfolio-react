@@ -1,10 +1,11 @@
 import React from "react";
 import { ImQuotesLeft } from "react-icons/im";
+import Layout from "./../Shared/Layout";
 
 const Quotes = () => {
   return (
-    <div>
-      <section>
+    <>
+      <Layout>
         <div className="flex justify-center my-12">
           <ImQuotesLeft fontSize="70px" className="opacity-10" />
         </div>
@@ -15,8 +16,8 @@ const Quotes = () => {
         <p className="my-12 text-6xl text-center font-TheHillsPersonalUseOnly tracking-wider	">
           Feel Emotions, Build Emotions and <br /> Spread Emotions By Design
         </p>
-      </section>
-    </div>
+      </Layout>
+    </>
   );
 };
 
